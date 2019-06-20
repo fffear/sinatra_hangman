@@ -1,7 +1,7 @@
 $: << File.expand_path("../lib", __FILE__)
 
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 require 'hangman'
 
 configure do
