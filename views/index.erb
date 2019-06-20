@@ -1,0 +1,10 @@
+<% session[:hangman] = Hangman.new %>
+<div>
+  <img class="index_image" src="/images/hangman.png" alt="Hangman Image">
+</div>
+
+<div class="start_game_btn">
+  <form action='/' method=POST>
+    <input type='submit' value='Play Game'>
+  </form>
+</div>

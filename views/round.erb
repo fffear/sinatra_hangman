@@ -1,0 +1,19 @@
+<% if guesses_remaining.zero? %>
+  <img class="hangman" src="/images/hangman_6.png" alt="Hangman Image">
+  <div class="game_end_msg">
+    <p>You lose!</p>
+    <p><%= "The secret word was \"#{secret_word}\"" %></p>
+    <%= erb :new_game %>
+  </div>
+<% elsif !encrypted_word.include? "_" %>
+  <div class="game_end_msg">
+    <p>You win!</p>
+    <p><%= "The secret word was \"#{secret_word}\"" %></p>
+    <%= erb :new_game %>
+  </div>
+<% elsif guesses_remaining > 0 %>
+  <%= erb :display_hangman, :locals => {:guesses_remaining => guesses_remaining} %>
+  <%= erb :guess_letter, :locals => {:secret_word => secret_word,
+                                     :encrypted_word => encrypted_word,
+                                     :incorrect_letters => incorrect_letters} %>
+<% end %>

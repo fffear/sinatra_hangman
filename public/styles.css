@@ -1,0 +1,72 @@
+html {
+  /*background-color: rgb(180, 180, 180);*/
+}
+
+section {
+  margin: 0 auto;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0px 0px;
+}
+
+.index_image {
+  display: block;
+  margin: 0 auto;
+  width: 342px;
+}
+
+.start_game_btn {
+  margin: 0 auto;
+  width: 94px;
+}
+
+.hangman {
+  display: block;
+  margin: 0 auto;
+  width: 147px;
+}
+
+.guess_form {
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.clues_inputs {
+  text-align: center;
+}
+
+.game_end_msg {
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.game_end_msg p {
+  margin: 5px;
+  text-align: center;
+}
+
+.game_end_msg div {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.game_end_msg div {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.back_to_menu_btn {
+  position: relative;
+  right: 300px;
+  top: 130px;
+}
